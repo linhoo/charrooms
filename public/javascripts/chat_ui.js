@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     socket.on("message", function(message) {
         var newElement = $("<div></div>").text(message.text);
-        $("#message").append(newElement);
+        $("#messages").append(newElement);
     });
 
     socket.on("rooms", function(rooms) {
